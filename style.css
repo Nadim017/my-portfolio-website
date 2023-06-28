@@ -327,6 +327,10 @@ form .btn2 {
 nav .icon {
   display: none;
 }
+.img {
+  height: 350px;
+  width: 100%;
+}
 /* ----------------------css for small screen-------- */
 @media only screen and (max-width: 668px) {
   #header {
