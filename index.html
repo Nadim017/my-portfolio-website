@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="./style.css" />
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script
       src="https://kit.fontawesome.com/e531f541dd.js"
       crossorigin="anonymous"
@@ -35,6 +40,7 @@
       </div>
     </div>
     <!-- ------------------------about-------------------------- -->
+
     <div id="about">
       <div class="container">
         <div class="row">
@@ -59,36 +65,67 @@
               <p class="tabs_links" onclick="openTab('education')">Education</p>
             </div>
             <div class="tab_contents active_tab" id="skills">
-              <ul>
-                <li>
-                  <span>React:</span><br />React is a powerful JavaScript
-                  library for building responsive and interactive user
-                  interfaces
-                </li>
-                <li>
-                  <span>Express:</span><br />Express is a lightweight and
-                  versatile web framework for Node.js, enabling streamlined
-                  development of server-side applications.
-                </li>
-                <li>
-                  <span>MongoDB:</span><br />
-                  MongoDB is a versatile NoSQL database renowned for its
-                  scalability, flexibility, and document-oriented approach to
-                  data storage.
-                </li>
-                <li>
-                  <span>Bootstrap:</span><br />
-                  Bootstrap is a widely-used front-end framework that simplifies
-                  responsive web design by providing a collection of pre-built
-                  CSS and JavaScript components.
-                </li>
-                <li>
-                  <span>Tailwind :</span><br />
-                  Tailwind CSS is a utility-first CSS framework that offers a
-                  highly customizable and efficient approach to styling web
-                  applications, enabling rapid development and design
-                  flexibility
-                </li>
+              <ul class="skill_container">
+                <div>
+                  <li>
+                    <span>React:</span><br />React is a powerful JavaScript
+                    library for building responsive and interactive user
+                    interfaces
+                    <div class="progress-bar">
+                      <div class="progress-bar-fill" style="width: 80%">
+                        80%
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span>Express:</span><br />Express is a lightweight and
+                    versatile web framework for Node.js, enabling streamlined
+                    development of server-side applications.
+                    <div class="progress-bar">
+                      <div class="progress-bar-fill" style="width: 75%">
+                        75%
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>MongoDB:</span><br />
+                    MongoDB is a versatile NoSQL database renowned for its
+                    scalability, flexibility, and document-oriented approach to
+                    data storage.
+                    <div class="progress-bar">
+                      <div class="progress-bar-fill" style="width: 65%">
+                        65%
+                      </div>
+                    </div>
+                  </li>
+                </div>
+
+                <div>
+                  <li>
+                    <span>Bootstrap:</span><br />
+                    Bootstrap is a widely-used front-end framework that
+                    simplifies responsive web design by providing a collection
+                    of pre-built CSS and JavaScript components.
+                    <div class="progress-bar">
+                      <div class="progress-bar-fill" style="width: 80%">
+                        80%
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Tailwind :</span><br />
+                    Tailwind CSS is a utility-first CSS framework that offers a
+                    highly customizable and efficient approach to styling web
+                    applications, enabling rapid development and design
+                    flexibility
+                    <div class="progress-bar">
+                      <div class="progress-bar-fill" style="width: 75%">
+                        75%
+                      </div>
+                    </div>
+                  </li>
+                </div>
               </ul>
             </div>
 
